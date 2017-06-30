@@ -27,3 +27,14 @@ However, using an expression can parse the arguments passed to a method call.
 cache.Get(() => myDataBaseContext.ExecuteProcedure(proc, arguments));
 cache.Get(() => f(1));
 ```
+  
+# Metrics  
+The caches' HitCount property contains cache hit and miss counts.
+```
+var cache = new FunctionCache() { EnableHitCount = true };
+var totals = cache.HitCount.Totals;
+HitCount procedureCalls = cache.HitCount[cacheKeyName];
+```
+
+# Extensibility  
+The base class BasicMemoryCache provides basic access to the underlying .NET Default Memory Cache instance with protected methods for `` Get, TryGetValue,`` and ``Add``
