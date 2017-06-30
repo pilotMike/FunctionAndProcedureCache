@@ -38,3 +38,11 @@ HitCount procedureCalls = cache.HitCount[cacheKeyName];
 
 # Extensibility  
 The base class BasicMemoryCache provides basic access to the underlying .NET Default Memory Cache instance with protected methods for `` Get, TryGetValue,`` and ``Add``
+
+#Changing the cache duration
+The BasicMemoryCache exposes a CacheItemPolicy that can be overridden per instance or per method via the extending classes.  
+```
+var cache = new FunctionCache() { CacheItemPolicy = new CacheItemPolicy() { SlidingExpiration = TimeSpan.FromDays(1) } } ;
+cache.Get(() => 1);
+cache.Get(() => 1, new CacheItemPolicy() /* ... */);
+```
