@@ -1,0 +1,4 @@
+C:\Users\dileom\OneDrive\Documents\Projects\Caching\GlobalCache\GlobalCache\bin\Debug\GlobalCache.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Caching\GlobalCache\GlobalCache\bin\Debug\GlobalCache.pdb
+C:\Users\dileom\OneDrive\Documents\Projects\Caching\GlobalCache\GlobalCache\obj\Debug\GlobalCache.dll
+C:\Users\dileom\OneDrive\Documents\Projects\Caching\GlobalCache\GlobalCache\obj\Debug\GlobalCache.pdb
